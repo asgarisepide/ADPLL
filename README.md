@@ -1,2 +1,5 @@
 # ADPLL
-Verilog PLL Code for ADPLL
+
+
+### ADPLL Layout
+![PLL](PLL.png)
