@@ -8,7 +8,7 @@ The proposed ADPLL is designed in 22-nm and its layout occupies an area of (71×
 
 # DCO Array
 
-![DCO Array](DCO array .png)
+![DCO Array](DCO_Array.png)
 
 
 # PFD
