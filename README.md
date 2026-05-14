@@ -6,18 +6,18 @@ The proposed ADPLL is designed in 22-nm and its layout occupies an area of (71×
 ![ADPLL](ADPLL_Design.png)
 
 
-# ADPLL Topology
+# DCO Array
 
-![ADPLL](ADPLL_Design.png)
+![DCO Array](DCO Array.png)
 
 
-### PFD
+# PFD
 
 ![PFD](PFD.png)
 
-### DCO_Control_Unit
+# DCO_Control_Unit
 
 ![DCO_Control](DCO_Control_Unit.png)
 
-### ADPLL Layout
+# ADPLL Layout
 ![PLL](PLL.png)
