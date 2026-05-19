@@ -11,6 +11,13 @@ The proposed ADPLL is designed in 22-nm and its layout occupies an area of (71×
 
 
 # DCO Array
+This picture shows the structure of the DCO. It is implemented with an array of tri-state inverters.
+The inverters that comprise the ring are divided into addressable component structures.
+
+Our design has 17 rows by 3 columns, and each stage has 15-ring oscillators, which results in a total of 765 inverters. 
+The first 16 rows of the inverter array are turned on/off by a row/column pseudo-thermometer control (PTC) 
+
+As more inverters in each stage are turned on by the control blocks of the DCO, the current driving strength of the stage increases while its capacitive load remains essentially constant, So, this results in an increase in the output frequency.
 
 ![DCO Array](DCO_Array.png)
 
