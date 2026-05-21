@@ -40,6 +40,9 @@ We have 2 dithering inverters. OverflowP and underflowP can turn on or off the d
 
 
 # DCO_Control_Unit
+This is the core of our design which takes control of everything.
+To efficiently regulate the DCO, a matrix architecture is employed. 
+This architecture receives LSB and MSB bits from LP for frequency tuning.
 
 ![DCO_Control](DCO_Control_Unit.png)
 
