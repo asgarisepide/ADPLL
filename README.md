@@ -47,4 +47,7 @@ This architecture receives LSB and MSB bits from LP for frequency tuning.
 ![DCO_Control](DCO_Control_Unit.png)
 
 # ADPLL Layout
+The proposed ADPLL is laid out in 22-nm and it occupies an area of (71×32 μm2).
+We used a standard cell library to do the layout, except for DCO and PFD, which have a custom layout.
+
 ![PLL](PLL.png)
