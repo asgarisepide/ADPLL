@@ -31,6 +31,10 @@ A self-timed reset loop determines that all events have taken place and generate
 ![PFD](PFD.png)
 
 # Digital loop Filter
+The PID loop filter operates at the divided DCO frequency. 
+All operations are performed using five bits of resolution.
+Underflows and overflows are passed to the DCO control for further accumulation and then, the DCO control increases or decreases the output frequency of the oscillator.
+We have 2 dithering inverters. OverflowP and underflowP can turn on or off the dithering inverters. 
 
 ![Loop_Filter](Loop_Filter.png)
 
