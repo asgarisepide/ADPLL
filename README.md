@@ -3,7 +3,7 @@ A frequency detector (PFD) is used to compare the arrival times of the reference
 The output of the filter is divided into the most significant bits (MSB), which are directly sent to the DCO for coarse tuning and the least significant bits (LSB), which are sent to the sigma delta modulator for fine tuning.
 The output of the DCO is used to generate a local clock that goes to all of the digital logic and to generate a clock gating signal that further reduces the clock frequency and is used by DLF and PFD.
 
-The proposed ADPLL is designed in 22-nm and its layout occupies an area of (71×32 μm2). The proposed design can generate frequencies ranging from 82 MHz to 5.2 GHz. 
+The proposed ADPLL is designed in 22-nm, and its layout occupies an area of (71×32 μm2). The proposed design can generate frequencies ranging from 82 MHz to 5.2 GHz. 
 
 ### ADPLL Topology
 
@@ -17,7 +17,7 @@ The inverters that comprise the ring are divided into addressable component stru
 Our design has 17 rows by 3 columns, and each stage has 15-ring oscillators, which results in a total of 765 inverters. 
 The first 16 rows of the inverter array are turned on/off by a row/column pseudo-thermometer control (PTC) 
 
-As more inverters in each stage are turned on by the control blocks of the DCO, the current driving strength of the stage increases while its capacitive load remains essentially constant, So, this results in an increase in the output frequency.
+As more inverters in each stage are turned on by the control blocks of the DCO, the current driving strength of the stage increases while its capacitive load remains essentially constant. So, this results in an increase in the output frequency.
 
 ![DCO Array](DCO_Array.png)
 
@@ -40,7 +40,7 @@ We have 2 dithering inverters. OverflowP and underflowP can turn on or off the d
 
 
 # DCO_Control_Unit
-This is the core of our design which takes control of everything.
+This is the core of our design, which takes control of everything.
 To efficiently regulate the DCO, a matrix architecture is employed. 
 This architecture receives LSB and MSB bits from LP for frequency tuning.
 
