@@ -1,5 +1,6 @@
 # ADPLL
-A frequency detector (PFD) is used to compare the arrival times of the reference and divided clock edges from the DCO output frequency. The resulting early/late information is filtered through a Digital Loop Filter at a divided frequency.
+**All Digital Phase Loop Lock:
+**A frequency detector (PFD) is used to compare the arrival times of the reference and divided clock edges from the DCO output frequency. The resulting early/late information is filtered through a Digital Loop Filter at a divided frequency.
 The output of the filter is divided into the most significant bits (MSB), which are directly sent to the DCO for coarse tuning and the least significant bits (LSB), which are sent to the sigma delta modulator for fine tuning.
 The output of the DCO is used to generate a local clock that goes to all of the digital logic and to generate a clock gating signal that further reduces the clock frequency and is used by DLF and PFD.
 
