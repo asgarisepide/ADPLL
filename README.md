@@ -30,7 +30,7 @@ A self-timed reset loop determines that all events have taken place and generate
 
 ![PFD](PFD.png)
 
-# Digital loop Filter
+# Digital Loop Filter
 The PID loop filter operates at the divided DCO frequency. 
 All operations are performed using five bits of resolution.
 Underflows and overflows are passed to the DCO control for further accumulation, and then, the DCO control increases or decreases the output frequency of the oscillator.
@@ -39,7 +39,7 @@ We have 2 dithering inverters. OverflowP and underflowP can turn on or off the d
 ![Loop_Filter](Loop_Filter.png)
 
 
-# DCO_Control_Unit
+# DCO Control Unit
 This is the core of our design, which takes control of everything.
 To efficiently regulate the DCO, a matrix architecture is employed. 
 This architecture receives LSB and MSB bits from LP for frequency tuning.
