@@ -22,7 +22,7 @@ As more inverters in each stage are turned on by the control blocks of the DCO, 
 ![DCO Array](DCO_Array.png)
 
 
-# PFD
+# Phase Frequency Detector
 This picture shows the self-timed, phase and frequency detector.
 The two input latches are used to detect the arrival of an edge on the reference and feedback clocks, which is fDCO/MN.
 A mutual exclusion element, or MUTEX, in the middle determines which of the two edges arrives first and stores the result in a set-reset flip-flop.
